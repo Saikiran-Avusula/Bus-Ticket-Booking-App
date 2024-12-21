@@ -1,6 +1,5 @@
-import React from 'react'
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-
 import Logo from "../../assets/logo.png"
 import { LiaTimesSolid } from 'react-icons/lia';
 import { FaBars, FaPhone } from 'react-icons/fa6';
@@ -8,7 +7,7 @@ import Theme from '../theme/Theme';
 
 const Navbar = () => {
 
-    const [open, setOpen] = React.useState(false);
+    const [open, setOpen] = useState(false);
 
     const navLinks = [
         { href: "/", label: "Home" },

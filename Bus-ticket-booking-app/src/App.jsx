@@ -1,13 +1,21 @@
 
+import { BrowserRouter as Router} from 'react-router-dom';
+import Navbar from './components/navbar/Navbar';
 
 function App() {
 
-
   return (
     <>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+      <Router>
+        <div className='w-full min-h-screen bg-neutral-50 dark:bg-neutral-950 text-neutral-800 dark:text-neutral-300 flex flex-col overflow-hidden'>
+          {/* Navbar */}
+          <Navbar />
+
+          {/* Home Content */}
+
+          {/* Footer */}
+        </div>
+      </Router>
     </>
   )
 }
